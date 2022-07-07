@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var a = null;
+      var a = undefined;
+      // var a = "pankaj saha"
+      console.log(a);
+
+      function hello() {
+        console.log("Pankaj Is Cool");
+      }
+
+      let obj = {
+        Pankaj: 1180,
+        Nandita: 1178,
+        func: function (value) {
+          console.log("The value is: " + value);
+        },
+      };
+
+      
+      document.addEventListener("click", function clicks() {
+        console.log("Clicked");
+        // Creating a alert box for the event listner event.
+        // alert("Element Clicked");
+
+        // creating an confirm box for the event listner:
+        // if clicked it will return true in the console, else it will return false in the console.
+        let conf = confirm("You want to exit: ");
+        console.log(conf);
+      });
+
+
+      var val = "This is me, this is you!";
+      console.log(val.slice(0, 5));
+
+      var arr = [1180, "Pankaj", 1178, "Nandita"];
+      arr.forEach((element) => {
+        console.log(element);
+      });
+
+      //   console.log(arr);
+      //   var arr = {1180:"Pankaj",1178:"Nandita"};
+
+
+      var myobj = {
+        a: this,
+        myfuncc: function (number) {
+          console.log("The number is: " + this);
+        },
+
+        rand: () => {
+          console.log("The number is: " + this);
+        },
+        // this of rand and a would be same, pointer function inherits the base this attribute,
+        // other function make their own this attribute like for myfuncc.
+      };
+
+
+      setTimeout(() => {
+        console.log("After 3 seconds");
+        console.log("No hoy es martes:");
+      }, 3000);
+      console.log("Hoy es Lunes:");
+
+
+
+    </script>
+  </head>
+  <body>
+    learning JS
+  </body>
+</html>
